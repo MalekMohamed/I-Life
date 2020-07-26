@@ -1,0 +1,212 @@
+.uppercase {
+    text-transform: uppercase;
+}
+.bold{
+    font-weight:bold;
+}
+.active-li-slide{
+    border-bottom: 1px solid #fff;
+    width:50px;
+}
+textarea:focus, button:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgba(229, 103, 23, 0.8);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(229, 103, 23, 0.6);
+  outline: 0 none;
+}
+.move {
+    position: fixed;
+    bottom: 10px;
+    right: 8px;
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    opacity: 0.7;
+    z-index: 990;
+
+    @media (max-width:1200px) {
+        right: 8px;
+
+    }
+
+    @media (max-width:999px) {
+        right: 0px;
+
+    }
+
+    .small-dot {
+        height: 27px;
+        widtH: 27px;
+        background: #ccc;
+        margin: 20px auto;
+        display: block;
+        border-radius: 50%;
+        opacity: 1;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+
+        @media (max-width:1200px) {
+            height: 24px;
+            widtH: 24px;
+            margin: 21px auto;
+
+        }
+
+        @media (max-width:999px) {
+            height: 18px;
+            widtH: 18px;
+
+        }
+
+        .dot {
+            position: absolute;
+            height: 7px;
+            widtH: 7px;
+            background: $mainColor;
+            display: block;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media (max-width:1200px) {
+                height: 8px;
+                widtH: 8px;
+            }
+
+            @media (max-width:999px) {
+                height: 7px;
+                widtH: 7px;
+            }
+
+        }
+
+    }
+
+    .active-dot {
+        height: 40px;
+        widtH: 40px;
+        background: #ccc;
+        margin: 20px auto;
+        display: block;
+        border-radius: 50%;
+        opacity: 1;
+        position: relative;
+
+        @media (max-width:1200px) {
+            height: 36px;
+            widtH: 36px;
+        }
+
+        @media (max-width:999px) {
+            height: 30px;
+            widtH: 30px;
+        }
+
+        .dot {
+            position: absolute;
+            height: 25px;
+            widtH: 25px;
+            background: #fff;
+            border: 5px solid $mainColor;
+            display: block;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @media (max-width:1200px) {
+                height: 25px;
+                widtH: 25px;
+            }
+
+            @media (max-width:999px) {
+                height: 18px;
+                widtH: 18px;
+            }
+        }
+    }
+}
+
+.padding {
+    padding: 70px 0;
+}
+
+.padding-sm {
+    @media (max-width:999px) {
+        padding: 20px 0;
+
+    }
+}
+
+.underline:after {
+    content: "";
+    display: block;
+    background: $mainColor;
+    color: $mainColor;
+    height: 2.5px;
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 11px;
+
+}
+
+.active-li {
+    color: $mainColor !important;
+}
+
+/*--------Loading Screen-------*/
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background:$mainColor;
+    overflow: hidden;
+    .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        width: 40px;
+        height: 40px;
+        background-color:#fff;
+        margin: 0 auto;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-rotateplane {
+        0% {
+            -webkit-transform: perspective(120px)
+        }
+
+        50% {
+            -webkit-transform: perspective(120px) rotateY(180deg)
+        }
+
+        100% {
+            -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+        }
+    }
+
+    @keyframes sk-rotateplane {
+        0% {
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        }
+
+        50% {
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        }
+
+        100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+    }
+}
+
+/*---------------------*/

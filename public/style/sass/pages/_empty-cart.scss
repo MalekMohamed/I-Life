@@ -1,0 +1,37 @@
+.active-li-slide {
+    border-bottom: 1px solid #fff;
+    width: 100px;
+}
+.empty {
+    font-family: arial;
+
+    h4 {
+        color: $mainColor;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        color: $textColor;
+    }
+
+    a {
+        text-decoration: none;
+        button {
+            background: $mainColor;
+            color: #fff;
+            font-size: 25px;
+            padding: 6px 50px;
+            transition: all 0.2s ease-in-out;
+            @include prefixer(transition, all 0.2s ease-in-out, webkit moz o);
+
+            &:hover {
+                color: #fff;
+                transform: scale(1.03, 1.03);
+                @include prefixer(scale, 1.03 1.03, webkit moz o);
+
+            }
+        }
+    }
+}

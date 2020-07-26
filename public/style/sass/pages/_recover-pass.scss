@@ -1,0 +1,47 @@
+.sign-in {
+  max-width:550px;
+  margin: 0 auto;
+
+  .sign-in-form {
+    border: 1px solid rgba(217, 217, 217, 0.534);
+    padding: 30px;
+    border-radius: 15px;
+
+    h5 {
+      color: $mainColor;
+
+    }
+
+    form {
+      margin-top: 30px;
+
+      input {
+        margin: 13px auto;
+        border-radius: 10px;
+      }
+
+      .btn {
+        background: $mainColor;
+        color: #fff;
+        font-size: 22px;
+        font-family: arial;
+        font-weight: 500;
+        padding: 5px 0;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  h6 {
+    color: $textColor;
+    font-weight: normal;
+    margin-top: 10px;
+
+    a {
+      color: $mainColor;
+    }
+  }
+}

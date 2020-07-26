@@ -1,0 +1,232 @@
+.nav {
+    width: 100%;
+
+    .left-nav {
+        width: 30%;
+        float: left;
+
+        @media (max-width:1200px) {
+            width: 35%;
+        }
+
+        @media (max-width:999px) {
+            display: none;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 20px;
+                margin-top: 45px;
+
+                @media (max-width:1200px) {
+                    margin: 0 15px;
+                    margin-top: 40px;
+                }
+
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: $mainFont;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .logo {
+        text-align: center;
+        width: 40%;
+        float: left;
+        font-size: 80px;
+        color: #fff;
+        font-weight: bold;
+        font-family: $logoFont;
+
+        @media (max-width:1200px) {
+            width: 30%;
+            font-size: 70px;
+        }
+
+        @media (max-width:999px) {
+            width: 94%;
+            font-size: 50px;
+            text-align: left;
+            float: none;
+        }
+
+        span {
+            margin: 0;
+            padding: 0;
+
+            .ie {
+                color: $mainColor;
+            }
+        }
+
+    }
+
+
+    .right-nav {
+        width: 30%;
+        float: left;
+
+        @media (max-width:1200px) {
+            width: 35%;
+        }
+
+        @media (max-width:999px) {
+            display: none;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 18px;
+                margin-top: 45px;
+
+                @media (max-width:1200px) {
+                    margin: 0 15px;
+                    margin-top: 40px;
+                }
+
+                @media (max-width:999px) {
+                    display: none;
+
+                }
+
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: $mainFont;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .burger {
+        width: 6%;
+        float: left;
+        margin-top: 25px;
+        display: none;
+
+        @media (max-width:999px) {
+            display: block;
+
+        }
+
+        a {
+            color: #fff;
+            margin-top: 40px;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $mainColor;
+            }
+        }
+
+
+    }
+
+    .slide-menu {
+        height: 100vh;
+        widtH: 0px;
+        background: #FF6600;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+        opacity: 0.95;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        @include prefixer(transition, all 0.4s ease-in-out, webkit moz o ms);
+
+        .btn-close {
+            color: #fff;
+            float: left;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-top: 7px;
+            transition: all 0.2s ease-in-out;
+            @include prefixer(transition, all 0.2s ease-in-out, webkit moz o ms);
+
+            &:hover {
+                transform: scale(1.1, 1.1);
+                text-decoration: none;
+            }
+        }
+
+        .slide-nav {
+            margin-top: 30px;
+
+            ul {
+                .list-one {
+                    transform: translateX(200px);
+                    transition: all 0.7s ease-in-out;
+
+                }
+
+                .list-two {
+                    transform: translateX(200px);
+                    transition: all 0.9s ease-in-out;
+
+                }
+
+                .list-three {
+                    transform: translateX(200px);
+                    transition: all 1s ease-in-out;
+
+                }
+
+                .list-four {
+                    transform: translateX(200px);
+                    transition: all 1.1s ease-in-out;
+
+                }
+
+                .list-five {
+                    transform: translateX(200px);
+                    transition: all 1.3s ease-in-out;
+
+                }
+
+                .list-six {
+                    transform: translateX(200px);
+                    transition: all 1.5s ease-in-out;
+
+                }
+
+                li {
+                    margin: 35px auto;
+
+                    a {
+                        color: #fff;
+                        font-size: 18px;
+                        font-family: $mainFont;
+
+                        &:hover {
+                            text-decoration: none;
+                            border-bottom: 1px solid #fff;
+                            width:50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,164 @@
+/*----- Start header------*/
+.header {
+    background: url('../img/homepage/headerImg.jpg') center no-repeat;
+    background-size: cover;
+    @include prefixer(background-size, cover, webkit moz o ms);
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+
+    .overlay {
+        @include overlay (rgba(17, 10, 3, 0.6), 1);
+    }
+
+    .art {
+        color: $mainColor;
+        font-weight: lighter;
+        margin-top: 30px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    button {
+        position: absolute;
+        bottom: 10px;
+        color: #ccc;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: color 0.2s ease-in-out;
+        @include prefixer(transition, color 0.2s ease-in-out, webkit moz o ms);
+        @include prefixer(transition, translateX(-50%), webkit moz o ms);
+
+        &:hover {
+            color: $mainColor;
+        }
+    }
+}
+
+/*----- End header------*/
+
+/*----- Start our product------*/
+
+.our-product {
+    z-index: 2;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    div {
+        margin-top: 15px;
+        cursor: pointer
+    }
+
+    .see-more {
+        color: $mainColor;
+        border: 1px solid #ccc;
+        margin-top: 50px;
+        font-size: 23px;
+        padding: 10px 90px;
+        border-radius: 19px;
+        transition: all 0.3s ease-in-out;
+        @include prefixer(transition, all 0.3s ease-in-out, webkit moz o ms);
+
+        &:hover {
+            border: 1px solid $mainColor;
+            color: #fff;
+            background: $mainColor;
+
+
+        }
+    }
+}
+
+/*----- End our product------*/
+
+/*----- Start  Sensors------*/
+.sensors {
+    z-index: 2;
+
+    h2 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    .lead {
+        margin-bottom: 40px;
+
+    }
+
+    i {
+        color: $mainColor;
+    }
+
+}
+
+/*----- End  Sensors------*/
+
+/*----- Start  fixed img------*/
+.fixed-img {
+    background: url("../../../img/homepage/section2.png") fixed left;
+    background-size: cover;
+    @include prefixer(background-size, cover, webkit moz o ms);
+    height: 400px;
+}
+
+/*----- End  fixed img------*/
+
+/*----- Start voice control------*/
+.voice {
+    h2 {
+        margin-top: 70px;
+        margin-bottom: 40px;
+        font-weight: normal;
+    }
+
+    .lead {
+        margin-bottom: 40px;
+
+    }
+
+}
+
+/*----- End voice control------*/
+
+/*----- Start subscription-----*/
+.subscription {
+    background: url('../../../img/homepage/section5.jpg') top no-repeat;
+    background-size: cover;
+    @include prefixer(background-size, cover, webkit moz o ms);
+    height: 300px;
+    position: relative;
+
+    .overlay {
+        @include overlay (rgba(17, 10, 3, 0.6), 0);
+
+        form {
+            padding: 50px 20px;
+
+            input[type="email"] {
+                height: 45px;
+
+                @media (max-width:999px) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        button {
+            color: #fff;
+            background: $mainColor;
+            padding: 5px 50px;
+            font-size: 22px;
+
+
+        }
+
+    }
+
+
+
+}
+
+/*------ End subscription-----*/

@@ -1,0 +1,17 @@
+footer {
+    a {
+        color: $mainColor;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: $mainColor;
+
+
+        }
+    }
+    span{
+        color:$mainColor;
+    }
+    
+}

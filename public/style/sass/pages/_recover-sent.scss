@@ -1,0 +1,44 @@
+.recover-sent {
+  max-width: 550px;
+  margin: 0 auto;
+  font-family: arial;
+
+
+  .sent {
+    border: 1px solid rgba(217, 217, 217, 0.534);
+    padding: 30px;
+    border-radius: 15px;
+    h5 {
+      color: $mainColor;
+      
+    }
+    .lead{
+      margin:25px 0;
+      font-weight: normal;
+      font-size:18px;
+      color:$textColor;
+      opacity: 0.8;
+
+    }
+    h4 {
+      color: $textColor;
+      font-weight: 600;
+      font-size:18px;
+      margin: 10px 0;
+      font-family: arial;
+
+        
+    }
+  }
+
+  
+  h6 {
+    color: $textColor;
+    font-weight: normal;
+    margin-top: 10px;
+
+    a {
+      color: $mainColor;
+    }
+  }
+}
